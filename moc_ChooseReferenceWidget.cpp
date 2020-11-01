@@ -1,19 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'ChooseReferenceWidget.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../ChooseReferenceWidget.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'ChooseReferenceWidget.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.1. It"
+#error "This file was generated using the moc from 5.12.8. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -22,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ChooseReferenceWidget_t {
-    QByteArrayData data[8];
-    char stringdata0[124];
+    QByteArrayData data[10];
+    char stringdata0[161];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -38,14 +37,16 @@ QT_MOC_LITERAL(2, 41, 0), // ""
 QT_MOC_LITERAL(3, 42, 12), // "resizeNeeded"
 QT_MOC_LITERAL(4, 55, 24), // "updateChapterVerseValues"
 QT_MOC_LITERAL(5, 80, 17), // "updateVerseValues"
-QT_MOC_LITERAL(6, 98, 12), // "displayVerse"
-QT_MOC_LITERAL(7, 111, 12) // "runMemorizer"
+QT_MOC_LITERAL(6, 98, 20), // "updateEndVerseValues"
+QT_MOC_LITERAL(7, 119, 15), // "updateSaveVerse"
+QT_MOC_LITERAL(8, 135, 12), // "displayVerse"
+QT_MOC_LITERAL(9, 148, 12) // "runMemorizer"
 
     },
     "ChooseReferenceWidget\0signalRunMemorizer\0"
     "\0resizeNeeded\0updateChapterVerseValues\0"
-    "updateVerseValues\0displayVerse\0"
-    "runMemorizer"
+    "updateVerseValues\0updateEndVerseValues\0"
+    "updateSaveVerse\0displayVerse\0runMemorizer"
 };
 #undef QT_MOC_LITERAL
 
@@ -55,7 +56,7 @@ static const uint qt_meta_data_ChooseReferenceWidget[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,20 +64,24 @@ static const uint qt_meta_data_ChooseReferenceWidget[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   44,    2, 0x06 /* Public */,
-       3,    0,   47,    2, 0x06 /* Public */,
+       1,    1,   54,    2, 0x06 /* Public */,
+       3,    0,   57,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,   48,    2, 0x08 /* Private */,
-       5,    0,   49,    2, 0x08 /* Private */,
-       6,    0,   50,    2, 0x08 /* Private */,
-       7,    0,   51,    2, 0x08 /* Private */,
+       4,    0,   58,    2, 0x08 /* Private */,
+       5,    0,   59,    2, 0x08 /* Private */,
+       6,    0,   60,    2, 0x08 /* Private */,
+       7,    0,   61,    2, 0x08 /* Private */,
+       8,    0,   62,    2, 0x08 /* Private */,
+       9,    0,   63,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    2,
     QMetaType::Void,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -95,8 +100,10 @@ void ChooseReferenceWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         case 1: _t->resizeNeeded(); break;
         case 2: _t->updateChapterVerseValues(); break;
         case 3: _t->updateVerseValues(); break;
-        case 4: _t->displayVerse(); break;
-        case 5: _t->runMemorizer(); break;
+        case 4: _t->updateEndVerseValues(); break;
+        case 5: _t->updateSaveVerse(); break;
+        case 6: _t->displayVerse(); break;
+        case 7: _t->runMemorizer(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -119,7 +126,7 @@ void ChooseReferenceWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c
 }
 
 QT_INIT_METAOBJECT const QMetaObject ChooseReferenceWidget::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
+    &QWidget::staticMetaObject,
     qt_meta_stringdata_ChooseReferenceWidget.data,
     qt_meta_data_ChooseReferenceWidget,
     qt_static_metacall,
@@ -147,13 +154,13 @@ int ChooseReferenceWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 8)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 6;
+        _id -= 8;
     }
     return _id;
 }
@@ -161,7 +168,7 @@ int ChooseReferenceWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void ChooseReferenceWidget::signalRunMemorizer(const QString & _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
