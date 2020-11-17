@@ -1,6 +1,6 @@
 # TotalReqall
 
-TotalReqall is a program designed to help you memorize things. Currently, TotalReqall only supports memorizing Bible verses in the King James Version, although support for adding custom content such as poetry is planned. Help for using TotalReqall can be found [here](./help). You can see screenshots [here](./screenshots). To preview TotalReqall through WebAssembly, click [here](./wasm/TotalReqall.html). Note that WebAssembly may not work well in all browsers, especially if you have many browser tabs open.
+TotalReqall is a program designed to help you memorize things. Currently, TotalReqall only supports memorizing Bible verses in the King James Version, although support for adding custom content such as poetry is planned. Help for using TotalReqall can be found [here](./help). You can see screenshots [here](./screenshots). To preview TotalReqall through WebAssembly, click [here](./wasm/TotalReqall.html). Note that WebAssembly may not work well in all browsers, especially if you have many browser tabs open. It also may not work optimally on mobile devices.
 
 TotalReqall is known to work on Linux, Windows, and WebAssembly, although it should work on any system that supports Qt.
 
