@@ -1,3 +1,5 @@
+# WARNING!!! TotalReqall has MOVED to [KDE Invent](https://invent.kde.org/lorendb/totalreqall). This repo is archived and read-only.
+
 # TotalReqall
 A program for memorizing the Bible and other works. Written in C++ with Qt. Now using the Sword library.
 
